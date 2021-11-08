@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Projects</title>
+      <link rel="shortcut icon" type="image" href="images/title-icon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #333;
+	color: white;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 30%;
+	height: 100%;
+	/* border: 1px solid red; */
+	margin-left: 20px;
+}
+
+.topnav {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	overflow: hidden;
+	background-color: #333;
+	/* border: 1px solid blue; */
+}
+
+.topnav a {
+	display: flex;
+	align-items: center;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 17px 9px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 10px;
+	/* box-shadow: 0px 0px 8px white; */
+	height: 3px;
+	border-top: 3px solid #C5CFD8;
+}
+
+.topnav a:hover {
+	border-top: 3px solid #72AB00;
+	color: #72AB00;
+}
+
+.topnav a.active {
+	background-color: #72AB00;
+	color: white;
+	border-radius: 5px;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+	border: 1px solid black;
+	margin-top: 10px;
+	background-color: #C5CFD8;
+}
+
+.social-links {
+	display: inline-block;
+}
+
+.infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: CENTER;
+	align-items: center;
+}
+
+div.column {
+	margin-top: 60px;
+	column-count: 3;
+	column-gap: 15px;
+	column-rule: 1px solid lightblue;
+	column-fill: balance;
+	width: 50%;
+	text-align: center;
+	height: 500px;
+	grid-column-end: auto;
+}
+
+.footer {
+	position: static;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	color: black;
+	height: auto;
+	padding-top: 10px;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+	* {
+		padding: 2px;
+	}
+	.header {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		background-color: #333;
+		color: white;
+		text-align: left;
+	}
+	.topnav {
+		flex-direction: column;
+		justify-content: flex-end;
+		/* border: 1px solid white; */
+		align-items: center;
+		text-align: center;
+		width: 30%;
+		margin-left: 10px;
+		border-radius: 5px;
+	}
+	.topnav a {
+		text-align: center;
+	}
+	.name {
+		flex-direction: column;
+		align-items: left;
+		width: 90%;
+		height: 100%;
+		text-align: center;
+	}
+	.footer {
+		height: auto;
+		border: 1px solid black;
+	}
+	.infos {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+	div.column {
+		column-count: 1;
+		width: 100%;
+	}
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+}
+
+.left-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.frames {
+	border: 2px solid black;
+	width: 98%;
+	height: 770px;
+	margin: 20px;
+}
+
+h1 {
+	color: #72AB00;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    height: 40px; 
+    width: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a {
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+</style>
+<body>
+    <div class="header">
+       <div class="name">
+          <h1> Andrei Cristian <span style="color: #9A9A9A"> Oancă</span></h1>
+          <p>Currently learning HTML, CSS and Javascript</p>
+       </div>
+       <div class="topnav">
+          <a href="Home.html">Home</a>
+          <a class="active" href="Projects.html">Projects</a>
+          <a href="CV.html">Curriculum Vitae</a>
+          <a href="Contact.html">Contact</a>
+       </div>
+    </div>
+    <div>
+       <h3>Chill Fm Website <br><span style="font-size: 13px;"> Want the source code? Download it here: <a href="media/Radio.rar">Source Code</a> </span></h3>
+       <iframe class="frames" src="media\Radio.html" title="Chill Fm"></iframe>
+    </div>
+    <!-- <div>
+       <h3>Find a plan - Frame <br><span> Want the source code? Download it here: <a href="media/Find_a_plan.rar">Source Code</a> </span></h3>
+       <iframe class="frames" src="media\Find_a_plan.html"title="Chill Fm"></iframe>   
+    </div>
+    <div>
+       <h3>Facebook Login Page <br><span> Want the source code? Download it here: <a href="media/Facebook_login.rar">Source Code</a> </span></h3>
+       <iframe class="frames" src="media\Facebook_login.html" title="Chill Fm"></iframe>
+    </div> -->
+    <div class="center">
+        <div class="pagination">
+          <a class="active" href="../Projects.html">1</a>
+          <a href="project_pages/page_2.html">2</a>
+          <a href="project_pages/page_3.html">3</a>
+          <a href="project_pages/page_4.html">4</a>
+          <a href="project_pages/page_5.html">5</a>
+        </div>
+    </div>
+    <div class="footer">
+       © 2021 by Cristi Oanca |
+       <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>
+      
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head><title>Facebook - conecteaza-te sau inscrie-te</title>
+<link rel="shortcut icon" type="image" href="images/facebook-icon.png">
+<style>
+body {
+	background-color: #F0F2F5;
+	font-family: Arial, sans-serif;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 700px;
+}
+
+.left-div {
+	display: flex;
+	display: inline-block;
+	font-family: Grayfel Condensed Demi;
+	height: 180px;
+	width: 33%;
+	text-align: left;
+	padding: 20px;
+}
+
+.right-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	box-shadow: 0px 0px 15px lightgrey;
+	height: 350px;
+	width: 400px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+img {
+	height: 100px;
+	margin: -10px;
+	padding-bottom: -20px;
+}
+
+h2 {
+	font-size: 25px;
+	margin: -20px;
+	padding: 40px;
+	margin-top: -50px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+.input1 {
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	height: 45px;
+	margin: 8px;
+	margin-top: 15px;
+}
+
+.input2 {
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	height: 50px;
+	margin: 8px;
+	margin-top: 15px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #1877F2;
+}
+
+.input3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	height: 50px;
+	margin-left: 73px;
+	margin-top: 15px;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: #42B72A;
+	width: 60%;
+}
+
+::placeholder {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	color: rgb(163, 154, 154);
+}
+
+.forgot-pass {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	margin-top: 10px;
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 15px;
+}
+
+a {
+	color: #1877F2;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.creeaza-pagina {
+	padding-top: 60px;
+	text-align: center;
+}
+
+a.create {
+	color: black;
+	font-weight: bold;
+}
+
+.footer {
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	text-decoration: none;
+	height: 260px;
+	background-color: white;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	display: inline;
+}
+
+li {
+	display: inline;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+.footer-link {
+	border-bottom: 1px solid black;
+	margin-left: -280px;
+	padding-bottom: 15px;
+	padding-left: 0;
+	border-width: 300%;
+	
+}
+</style>
+</head>
+<body>
+    <div class="parent">
+       <div class="left-div">
+          <div> <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook"></img></div>
+          <div>
+             <h2>Facebook te ajută să iei legătura şi să comunici cu persoanele din viaţa ta.</h2>
+          </div>
+       </div>
+       <div class="right-div">
+          <div class="input" >
+             <input  class="input1" type="text" name="email" id="email" placeholder="E-mail sau numar de telefon:">
+             <input class="input1" type="password" name="password" id="password" placeholder="Parola">
+             <input class="input2" type="submit" value="Conecteaza-te">
+             <div class="forgot-pass"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Ai uitat Parola?</a></div>
+             <div> <input class="input3" type="submit" value="Creeaza un cont nou"></div>
+             <div class="creeaza-pagina"><a class="create" href="https://www.facebook.com/pages/create/?ref_type=registration_form">Creează o Pagină </a>pentru o celebritate, o formaţie sau o companie.</div>
+          </div>
+       </div>
+    </div>
+    <div class="footer">
+       <ul class="footer-link">
+          <li><a href="index.html"> Română </a></li>
+          <li><a href="index.html"> English(US) </a></li>
+          <li> <a href="index.html"> Magyar </a></li>
+          <li> <a href="index.html"> Italiano </a></li>
+          <li>  <a href="index.html"> Español (España)</a></li>
+          <li>  <a href="index.html"> Français (France)</a></li>
+          <li> <a href="index.html"> Türkçe </a></li>
+          <li> <a href="index.html"> Português (Brasil) </a></li>
+          <li>  <a href="index.html"> العربية</a></li>
+          <li> <a href="index.html"> हिन्दी </a></li>
+       </ul>
+    </div>
+ </body>
+ </html>

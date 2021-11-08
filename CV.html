@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Curriculum Vitae</title>
+      <link rel="shortcut icon" type="image" href="images/title-icon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+   </head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #333;
+	color: white;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 30%;
+	height: 100%;
+	/* border: 1px solid red; */
+	margin-left: 20px;
+}
+
+.topnav {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	overflow: hidden;
+	background-color: #333;
+	/* border: 1px solid blue; */
+}
+
+.topnav a {
+	display: flex;
+	align-items: center;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 17px 9px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 10px;
+	/* box-shadow: 0px 0px 8px white; */
+	height: 3px;
+	border-top: 3px solid #C5CFD8;
+}
+
+.topnav a:hover {
+	border-top: 3px solid #72AB00;
+	color: #72AB00;
+}
+
+.topnav a.active {
+	background-color: #72AB00;
+	color: white;
+	border-radius: 5px;
+}
+
+h1 {
+	color: #72AB00;
+}
+
+.container-1 {
+	display: flex;
+	width: 19%;
+	height: 100%;
+	justify-content: flex-start;
+	margin-right: 20px;
+}
+
+.container-2 {
+	display: flex;
+	width: 19%;
+	height: 100%;
+	justify-content: flex-start;
+}
+
+.container-3 {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	height: 300px;
+	margin-left: 0;
+}
+
+.container-3 a {
+	text-decoration: none;
+	color: black;
+	;
+}
+
+.container-3 a:hover {
+	color: blue;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	width: auto;
+	border: 1px solid black;
+	margin-top: 10px;
+	background-color: #C5CFD8;
+	height: 450px;
+}
+
+.social-links {
+	display: inline-block;
+}
+
+.infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: CENTER;
+	align-items: center;
+}
+
+div.column {
+	margin-top: 60px;
+	column-count: 3;
+	column-gap: 15px;
+	column-rule: 1px solid lightblue;
+	column-fill: balance;
+	width: 50%;
+	text-align: center;
+	height: 500px;
+	grid-column-end: auto;
+}
+
+.footer {
+	position: static;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	color: black;
+	height: auto;
+	padding-top: 10px;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+.work-experience {
+	display: flex;
+	flex-direction: ROW;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.jobs {
+	display: flex;
+	flex-direction: column;
+	text-align: flex-start;
+	justify-content: flex-start;
+	height: auto;
+	width: 800px;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	text-align: flex-start;
+	justify-content: flex-start;
+	height: auto;
+	width: 200px;
+	margin-left: 30px;
+}
+
+.jobs h4 {
+	margin-top: 0;
+	color: #72AB00;
+}
+
+.jobs p {
+	margin-top: -10px;
+}
+
+.jobs ul {
+	margin-top: 0;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	background-color: #72AB00;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.container-3 input {
+	width: 120px;
+	height: 30px;
+	background-color: #72AB00;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+
+/* @page { size: A3 }
+
+.onclick-button {
+    background-color: red;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+} */
+
+@media only screen and (max-width: 500px) {
+	* {
+		padding: 2px;
+	}
+	.header {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		background-color: #333;
+		color: white;
+		text-align: left;
+	}
+	.topnav {
+		flex-direction: column;
+		justify-content: flex-end;
+		/* border: 1px solid white; */
+		align-items: center;
+		text-align: center;
+		width: 30%;
+		margin-left: 10px;
+		border-radius: 5px;
+	}
+	.topnav a {
+		text-align: center;
+	}
+	.name {
+		flex-direction: column;
+		align-items: left;
+		width: 90%;
+		height: 100%;
+		text-align: center;
+	}
+	.parent {
+		display: block;
+		flex-direction: column;
+		padding: 10px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.container-1 {
+		height: 200px;
+		width: 10em;
+		justify-content: center;
+		display: none;
+	}
+	.container-1 img {
+		object-fit: contain;
+		width: 100%;
+	}
+	.container-3 {
+		width: 100%;
+		align-items: center;
+		margin-top: 0;
+		height: 300px;
+		margin-block-start: -3%;
+	}
+	.container-2 {
+		display: none;
+	}
+	.container-3 p {
+		width: 100%;
+		text-align: center;
+		margin-block-start: 0;
+	}
+	.work-experience {
+		flex-direction: column;
+		width: 100%;
+	}
+	.jobs {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.jobs h4,
+	.jobs p,
+	.jobs h3 {
+		text-align: center;
+	}
+	.skills {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		flex-wrap: wrap;
+		margin-left: 0;
+	}
+	.skills h3 {
+		margin: 0;
+	}
+}
+</style>
+<body>
+    <div class="header">
+       <div class="name">
+          <h1> Andrei Cristian <span style="color: #9A9A9A"> Oancă</span></h1>
+          <p>Currently learning HTML, CSS and Javascript</p>
+       </div>
+       <div class="topnav">
+          <a href="Home.html">Home</a>
+          <a href="Projects.html">Projects</a>
+          <a class="active" href="CV.html">Curriculum Vitae</a>
+          <a href="Contact.html">Contact</a>
+       </div>
+    </div>
+    <div class="parent">
+       <div class="container-1">
+          <img style="object-fit: cover;" src="images/photo-cv.png" alt="photo">
+       </div>
+       <div class="container-2"></div>
+       <div class="container-3">
+          <p style="color:#72AB00; margin-bottom: -30px; font-size: 40px; padding-bottom: 20px;">CV</p>
+          <br>
+          <form action="media/CV_Cristian_Oanca.pdf">
+             <input type="submit" value="Download File" onclick="alert('You will be redirected to the download page')"><br>
+          </form>
+          <p style="color:#72AB00; margin-bottom: -30px; font-size: 16px; padding-bottom: 20px;">Andrei Cristian<br>Oancă </p>
+          <br>
+          <p>87 Traian St<br>Galati<br>RO 800112</p>
+          <address>
+             <p style="color:#72AB00; margin-bottom:0;">Tel:</p>
+             <a href="tel:+40722254532">
+                +40 722 254 532</p>
+                <p style="color:#72AB00; margin-bottom:0;">E-mail:</p>
+             <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>         
+          </address>
+          <div class="social-links"> <br>
+             <a href="https://www.linkedin.com/in/cristi-oanca/"><img style="height: 40px; width: 40px;" src="images/logo-linkedin.png"></img></a>       
+             <a href="https://www.facebook.com/cristi.oanca.56/"><img style="height: 40px; width: 40px;" src="images/logo-facebook.png"></img></a>   
+          </div>
+       </div>
+    </div>
+    <div class="work-experience">
+       <div class="jobs">
+          <h3 style="border-bottom: 2px solid #C5CFD8;">Work experience</h3>
+          <h4>Site Engineer<span style="color: black;"> at</span> <a style="text-decoration: none; color: blue;" href="http://www.ischiasport.ro/en/index.html" target="_blank">SC Ischia SRL</a></h4>
+          <p>August 2020 - Present <span style="color:#72AB00;"> - Full Time</span></p>
+          <ul>
+             <li>Prepared contract documents and requisite cost estimates</li>
+             <li>Coordinated all work operations with clients and relevant government officials </li>
+             <li>Conducted regular and preventive maintenance checks</li>
+             <li>Skills in reading and interpreting construction specifications and blueprints</li>
+             <li>Time management skills</li>
+             <li>Coordinated workers on site </li>
+          </ul>
+          
+          <h4>Team Leader<span style="color: black;"> at</span> <a style="text-decoration: none; color: blue;" href="https://meninblack.ro/index.php/ro/" target="_blank">Men in Black Advertising</a></h4>
+          <p>March 2014 – August 2020 <span style="color:#72AB00;"> - Project Based</span></p>
+          <ul>
+             <li>Coached team members in customer service techniques, providing feedback and encouraging them to reach their highest sales potential.</li>
+             <li>Implemented new working processes that delivered continued improvements.</li>
+             <li>Established open and professional relationships with team members which helped resolve issues and conflicts quickly.</li>
+             <li>Provided instruction, coaching and motivation to all employees during the shift.</li>
+             <li>Developed and enforced safety standards and procedures for food quality and sanitation purposes.</li>
+             <li>Received multiple positive reviews which acknowledged dedication to excellent customer service.</li>
+             <li>Operated a cash register for cash, check and credit card transactions with 100% accuracy.</li>
+             <li>Cultivated a customer-focused shopping environment by greeting and responding to all customers in a friendly manner.</li>
+             <li>Alerted customers to upcoming sales events and promotions.</li>
+             <li>Communicated with and supported sales, marketing and administrative teams.</li>
+          </ul>
+       </div>
+       <div class="skills">
+          <h3 style="border-bottom: 2px solid #C5CFD8; color:#72AB00;">Languages</h3>
+          <ul>
+             <li>English - Fluent</li>
+          </ul>
+          <br>
+          <h3 style="border-bottom: 2px solid #C5CFD8; color:#72AB00;">Skills</h3>
+          <ul>
+             <li>HTML</li>
+             <li>CSS</li>
+             <li>Javascript</li>
+             <li>Autocad 2D&3D</li>
+             <li>eDevize</li>
+             <li>Eplan ProPanel P8</li>
+          </ul>
+          <br>
+          <h3 style="border-bottom: 2px solid #C5CFD8; color:#72AB00;">Certifications</h3>
+          <ul>
+             <li>Electrician - 6 months training course</li>
+          </ul>
+          <br>
+       </div>
+    </div>
+    <div class="footer">
+       © 2021 by Cristi Oanca |
+       <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>
+    </div>
+ </body>
+ </html>

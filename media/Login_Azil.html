@@ -1,0 +1,192 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Login Page</title>
+</head>
+<style>
+body {
+	background: url('images/login_page.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Copperplate, Papyrus, fantasy;
+	font-size: 35px;
+	font-weight: bold;
+	text-shadow: 5px 5px 10px #333;
+	/* border: 1px solid white; */
+	height: 200px;
+	width: 53%;
+}
+
+.header-login {
+	display: flex;
+	justify-content: center;
+	background-color: #CBAA85;
+	align-items: center;
+	font-family: Helvetica;
+	font-size: 29px;
+	font-weight: bold;
+	/* border: 2px solid red; */
+	height: 20%;
+	width: 500px;
+	margin-bottom: 20px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.parent-flex {
+	display: flex;
+	margin-block-start: 3% !important;
+	background-color: white;
+	margin: 250px;
+	height: 500px;
+	width: 500px;
+	border: none;
+	border-radius: 25px;
+	box-shadow: 0px 0px 20px white;
+	opacity: 0.8;
+	flex-direction: column;
+	align-items: center;
+}
+
+.signin-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	/* border: 1px solid red; */
+	height: 300px;
+}
+
+.form-input {
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	margin: 15px;
+}
+
+.signup-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* border: 1px solid red; */
+	width: 100%;
+	height: 25%;
+	background-color: #CBAA85;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.button {
+	width: 200px;
+	height: 30px;
+	background-color: #7B7E2D;
+	border-radius: 25px;
+	border: none;
+	color: white;
+}
+
+a {
+	color: #67702D;
+}
+
+.fa {
+	margin: 3px;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	display: inline-flex;
+	background-color: rgb(37, 95, 202);
+	width: 30px;
+	height: 30px;
+	color: white;
+	border-radius: 40%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-twitter {
+	display: inline-flex;
+	background-color: rgb(37, 95, 202);
+	width: 30px;
+	height: 30px;
+	color: white;
+	border-radius: 40%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-youtube {
+	display: inline-flex;
+	background-color: rgb(236, 6, 6);
+	width: 30px;
+	height: 30px;
+	color: white;
+	border-radius: 40%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-instagram {
+	display: inline-flex;
+	background-color: rgb(235, 68, 146);
+	width: 30px;
+	height: 30px;
+	color: white;
+	border-radius: 40%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icons {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+}
+</style>
+<body>
+    <div class="header">Bine ati venit la Azilul de Animale!</div>
+    <div class="parent-flex">
+       <div class="header-login">Login</div>
+       <div>
+          <form class="signin-form" name="myForm" action="/action_page.php" method="get">
+             <label for="username" style="font-size:22px;">Username</label>
+             <input class="form-input" type="text" id="username" name="username" placeholder="Type your username">
+             <label for="password" style="font-size:22px;">Password</label>
+             <input class="form-input" type="password" id="password" name="password" placeholder="Type your password"><br>
+             <span>Forgot<a  class="forgot-link-a" href="#reset">Username / Password?</a></span><br><br>
+             <input class="button" type="submit" value="SIGN IN">
+          </form>
+          <div class="social-icons">
+             <a href="#" class="fa fa-facebook"></a>
+             <a href="#" class="fa fa-twitter"></a>
+             <a href="#" class="fa fa-youtube"></a>
+             <a href="#" class="fa fa-instagram"></a>
+          </div>
+       </div>
+       <div class="signup-link">
+          <p class="paragr">Don't have an account?</p>
+          <a href="#index.html">SIGN UP NOW</a> 
+       </div>
+    </div>
+ </body>
+ </html>

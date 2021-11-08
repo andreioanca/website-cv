@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Contact</title>
+      <link rel="shortcut icon" type="image" href="images/title-icon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+<style>
+body {
+	margin: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #333;
+	color: white;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 30%;
+	height: 100%;
+	/* border: 1px solid red; */
+	margin-left: 20px;
+}
+
+.topnav {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	overflow: hidden;
+	background-color: #333;
+	/* border: 1px solid blue; */
+}
+
+.topnav a {
+	display: flex;
+	align-items: center;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 17px 9px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 10px;
+	/* box-shadow: 0px 0px 8px white; */
+	height: 3px;
+	border-top: 3px solid #C5CFD8;
+}
+
+.topnav a:hover {
+	border-top: 3px solid #72AB00;
+	color: #72AB00;
+}
+
+.topnav a.active {
+	background-color: #72AB00;
+	color: white;
+	border-radius: 5px;
+}
+
+h1 {
+	color: #72AB00;
+}
+
+.container-2 {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	/* border: 1px solid black; */
+	width: 20%;
+	height: 100%;
+}
+
+.container-3 {
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid black; */
+	width: 15%;
+	height: 100%;
+	justify-content: flex-start;
+	margin-left: -100px;
+}
+
+.container-3 a {
+	text-decoration: none;
+	color: black;
+	;
+}
+
+.container-3 a:hover {
+	color: blue;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+	margin-top: 90px;
+	padding-bottom: 10px;
+}
+
+.social-links {
+	display: inline-block;
+}
+
+.infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: CENTER;
+	align-items: center;
+}
+
+div.column {
+	margin-top: 60px;
+	column-count: 3;
+	column-gap: 15px;
+	column-rule: 1px solid lightblue;
+	column-fill: balance;
+	width: 50%;
+	text-align: center;
+	height: 500px;
+	grid-column-end: auto;
+}
+
+.footer {
+	position: static;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	color: black;
+	height: auto;
+	padding-top: 10px;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+input {
+	height: 25px;
+	width: 350px;
+}
+
+button {
+	width: 130px;
+	height: 40px;
+	background-color: #72AB00;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+	* {
+		padding: 2px;
+	}
+	.header {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		background-color: #333;
+		color: white;
+		text-align: left;
+	}
+	.topnav {
+		flex-direction: column;
+		justify-content: flex-end;
+		/* border: 1px solid white; */
+		align-items: center;
+		text-align: center;
+		width: 30%;
+		margin-left: 10px;
+		border-radius: 5px;
+	}
+	.topnav a {
+		text-align: center;
+	}
+	.name {
+		flex-direction: column;
+		align-items: left;
+		width: 90%;
+		height: 100%;
+		text-align: center;
+	}
+	.parent {
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.container-2 {
+		width: 100%;
+		padding-right: 5px;
+		text-align: center;
+		margin-left: 0;
+	}
+	.container-2 form {
+		width: 100%;
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.container-3 {
+		width: 100%;
+		align-items: center;
+		margin: 0;
+	}
+	.container-3 p {
+		text-align: center;
+		width: 100%;
+	}
+}
+</style>
+<body>
+    <div class="header">
+       <div class="name">
+          <h1> Andrei Cristian <span style="color: #9A9A9A"> Oancă</span></h1>
+          <p>Currently learning HTML, CSS and Javascript</p>
+       </div>
+       <div class="topnav">
+          <a href="Home.html">Home</a>
+          <a href="Projects.html">Projects</a>
+          <a href="CV.html">Curriculum Vitae</a>
+          <a class="active" href="Contact.html">Contact</a>
+       </div>
+    </div>
+    <h1 style="text-align: center; font-size: 30px; color: red;">This is only a front end form.</h1>
+    <div class="parent">
+       <div class="container-3">
+          <p style="color:#72AB00; margin-bottom: -30px; font-size: 40px; padding-bottom: 20px;">CONTACT</p>
+          <br>
+          <p style="color:#72AB00; margin-bottom: -30px; font-size: 16px; padding-bottom: 20px;">Andrei Cristian<br>Oancă </p>
+          <br>
+          <p>87 Traian St<br>Galati<br>RO 800112</p>
+          <address>
+             <p style="color:#72AB00; margin-bottom:0;">Tel:</p>
+             <a href="tel:+40722254532">
+                +40 722 254 532</p>
+                <p style="color:#72AB00; margin-bottom:0;">E-mail:</p>
+             <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>         
+          </address>
+          <div class="social-links"> <br>
+             <a href="https://www.linkedin.com/in/cristi-oanca/" target="_blank"><img style="height: 40px; width: 40px;" src="images/logo-linkedin.png"></img></a>       
+             <a href="https://www.facebook.com/cristi.oanca.56/" target="_blank"><img style="height: 40px; width: 40px;" src="images/logo-facebook.png"></img></a>   
+          </div>
+       </div>
+       <div class="container-2">
+          <p>Looking forward to answering your email.</p>
+          <form action="/action_page.php">
+             <label for="name"></label><br>
+             <input type="text" id="name" name="name" placeholder="Name"> <br>
+             <label for="email"></label><br>
+             <input type="text" id="email" name="email" placeholder="Email"> <br>
+             <label for="phone"></label><br>
+             <input type="text" id="phone" name="phone" placeholder="Telephone"> <br>
+             <label for="oanca"></label>
+             <textarea style="margin-top: 20px;" id="text" name="text" rows="10" cols="48" placeholder="Type your message here.."></textarea>
+             <button type="submit" value="submit">Send</button>
+          </form>
+       </div>
+    </div>
+    
+    <!-- <div class="footer">
+       © 2021 by Cristi Oanca |
+       <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>
+    </div> -->
+ </body>
+ </html>

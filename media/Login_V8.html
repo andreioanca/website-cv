@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login V8</title>
+</head>
+
+<style>
+.form {
+	display: block;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	border-radius: 25px;
+	align-items: baseline;
+	justify-content: center;
+	width: 500px;
+	height: 700px;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-block-start: 8%;
+	box-shadow: 0 0 12px lightgrey;
+}
+
+.form-input {
+	border-radius: 25px;
+	background-color: lightgray;
+	font-family: Helvetica;
+	height: 50px;
+	width: 400px;
+	border: none;
+	box-shadow: 0 0 20px lightgrey;
+	font-weight: bold;
+	margin: 10px;
+	text-align: center;
+}
+
+.form-input:hover {
+	height: 50px;
+	width: 430px;
+	transition: 2s;
+	border: none;
+}
+
+.button {
+	border-radius: 25px;
+	width: 400px;
+	background-color: #57B846;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	height: 50px;
+}
+
+.flex-container>div {
+	color: black;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-family: JosephinSans;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	font-size: 18px;
+}
+
+a:link {
+	color: rgb(3, 241, 3);
+	font-weight: bold;
+	font-family: Ubuntu-Regular;
+	font-size: 15px;
+}
+
+a:visited {
+	color: rgb(3, 241, 3);
+}
+
+a:hover {
+	color: black;
+	transition-duration: 2s;
+}
+
+.button:hover {
+	background-color: black;
+	transition: 2s;
+}
+
+.signin-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.forgot-link {
+	font-family: Ubuntu-Regular;
+	font-size: 15px;
+	color: #57b846;
+	line-height: 1.4;
+}
+
+.forgot-link-a {
+	font-family: Ubuntu-Regular;
+	font-size: 15px;
+	color: #57b846;
+	line-height: 1.4;
+}
+
+.signup-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-family: Ubuntu-Regular;
+	font-size: 15px;
+}
+
+.header {
+	background: #57B846;
+	width: 100%;
+	height: 17%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.paragr {
+	font-family: Ubuntu-Regular;
+	font-size: 15px;
+	padding: 0px 0px 9px;
+}
+</style>
+<body>
+    <div class="flex-container">
+       <div class="header">
+          <h1>Sign in</h1>
+       </div>
+       <form class="signin-form" name="myForm" action="/action_page.php" method="get">
+          <label for="username"></label>
+          <input class="form-input" type="text" id="username" name="username" placeholder="Username">
+          <label for="password"></label>
+          <input class="form-input" type="password" id="password" name="password" placeholder="Password"><br><br>
+          <span class="forgot-link">Forgot<a  class="forgot-link-a" href="#reset"> Forgot Username / Password?</a></span><br>
+          <input class="button" type="submit" value="SIGN IN">
+       </form>
+       <div class="signup-link">
+          <p class="paragr">Don't have an account?</p>
+          <a href="#index.html">SIGN UP NOW</a> 
+       </div>
+    </div>
+ </body>
+ </html>

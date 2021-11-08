@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Chill FM</title>
+      <link rel="shortcut icon" type="image" href="images/logo.jpg">
+   </head>
+<style>
+body {
+	background-color: #1E6B94;
+	background-size: cover;
+}
+
+.container-1 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-block-start: 4.4%;
+}
+
+.container-2 {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	height: 50px;
+}
+
+.container-3 {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	margin-top: -15px;
+}
+
+.play-pause {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: -5px;
+}
+
+a {
+	color: white;
+	font-size: 16px;
+	font-family: sans-serif;
+	text-decoration: none;
+	margin: 2px;
+}
+
+a.social {
+	margin: 10px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	height: 20px;
+}
+
+
+</style>
+<body>
+    <div class="container-1">
+       <img src="images/chill.jpg" alt="chill"></img>
+    </div>
+    <div class="play-pause">
+       <audio controls volume="0.9" id="myAudio" class="play-pause" src="https://edge126.rcs-rds.ro/profm/chillfm.mp3"></audio>
+    </div>
+    <div class="container-2">
+       <a class="social" href="https://www.facebook.com/ChillFMRomania/"><img style="height: 33px; width: 33px;  opacity: 0.5;" src="images/logo-facebook.png"></img></a>
+       <a class="social" href="https://www.instagram.com/chillfmromania/"><img style="height: 30px; width: 30px; opacity: 0.5;" src="images/logo-instagram.png"></img></a>
+    </div>
+    <div class="container-3">
+       <a class="social" href="https://apps.apple.com/ro/app/chill-fm/id1445009210"><img src="images/app-store-badge.png"></img></a>
+       <a class="social" href="https://play.google.com/store/apps/details?id=ro.rcsrds.chillfm"><img src="images/google-play-badge.png"></img></a>
+    </div>
+    <div class="footer">
+       <a href="index.html">Politica de utilizare a modulelor cookie |</a> 
+       <a href="index.html">Politica de confidentialitate</a>
+    </div>
+ </body>
+ </html>

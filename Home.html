@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Home</title>
+      <link rel="shortcut icon" type="image" href="images/title-icon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+    
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #333;
+	color: white;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 30%;
+	height: 100%;
+	/* border: 1px solid red; */
+	margin-left: 20px;
+}
+
+.topnav {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	overflow: hidden;
+	background-color: #333;
+	/* border: 1px solid blue; */
+}
+
+.topnav a {
+	display: flex;
+	align-items: center;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 17px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	margin: 10px;
+	/* box-shadow: 0px 0px 8px white; */
+	height: 3px;
+	border-top: 3px solid #C5CFD8;
+}
+
+.topnav a:hover {
+	border-top: 3px solid #72AB00;
+	color: #72AB00;
+}
+
+.topnav a.active {
+	background-color: #72AB00;
+	color: white;
+	border-radius: 5px;
+}
+
+h1 {
+	color: #72AB00;
+}
+
+.container-1 {
+	display: flex;
+	/* border: 1px solid black; */
+	width: 23%;
+	justify-content: flex-start;
+}
+
+.container-2 {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	/* border: 1px solid black; */
+	width: 20%;
+	height: 100%;
+}
+
+.container-3 {
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid black; */
+	width: 15%;
+	height: 100%;
+	justify-content: flex-start;
+	margin-left: 20px;
+}
+
+.container-3 a {
+	text-decoration: none;
+	color: black;
+	;
+}
+
+.container-3 a:hover {
+	color: blue;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: #C5CFD8;
+}
+
+.social-links {
+	display: inline-block;
+}
+
+.infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: CENTER;
+	align-items: center;
+}
+
+div.column {
+	margin: 20px;
+	column-count: 2;
+	column-gap: 15px;
+	column-rule: 1px solid lightblue;
+	column-fill: balance;
+	width: 50%;
+	text-align: center;
+	height: auto;
+	grid-column-end: auto;
+}
+
+.footer {
+	position: static;
+	
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	color: black;
+	height: auto;
+	padding-top: 10px;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	background-color: #72AB00;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+	* {
+		padding: 2px;
+	}
+	.header {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		background-color: #333;
+		color: white;
+		text-align: left;
+	}
+	.topnav {
+		flex-direction: column;
+		justify-content: flex-end;
+		/* border: 1px solid white; */
+		align-items: center;
+		text-align: center;
+		width: 30%;
+		margin-left: 10px;
+		border-radius: 5px;
+	}
+	.topnav a {
+		text-align: center;
+	}
+	.name {
+		flex-direction: column;
+		align-items: left;
+		width: 90%;
+		height: 100%;
+		text-align: center;
+	}
+	.parent {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.container-1 {
+		height: 200px;
+		width: 10em;
+		justify-content: center;
+	}
+	.container-1 img {
+		object-fit: contain;
+		width: 100%;
+	}
+	.container-2 {
+		width: 100%;
+		text-align: center;
+	}
+	.container-3 {
+		width: 100%;
+		align-items: center;
+		margin: 0;
+	}
+	.container-3,
+	.container-3 div,
+	.container-3 a {
+		text-align: center;
+		width: 100%;
+	}
+	
+	.infos {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+	div.column {
+		column-count: 1;
+		width: 100%;
+	}
+}
+</style>
+<body>
+    <div class="header">
+       <div class="name">
+          <h1> Andrei Cristian <span style="color: #9A9A9A"> Oancă</span></h1>
+          <p>Currently learning HTML, CSS and Javascript</p>
+       </div>
+       <div class="topnav">
+          <a class="active" href="Home.html">Home</a>
+          <a href="Projects.html">Projects</a>
+          <a href="CV.html">Curriculum Vitae</a>
+          <a href="Contact.html">Contact</a>
+       </div>
+    </div>
+    <div class="parent">
+       <div class="container-1">
+          <img src="images/photo-cv.png" alt="photo">
+       </div>
+       <div class="container-2">
+          <h1 style="font-size: 80px; margin-bottom: 1px; line-height: 40px;">Hello, <span style="font-size: 30px;"><br> I'm available for work.</span> </h1>
+          <p>I'm a Self-Taught Web Developer looking for a career switch, currently learning HTML, CSS and Javascript. I've finished a couple of projects,
+             a CV website only for my resume and a website for a local radio using only HTML and CSS. I can send them at
+             request.
+          </p>
+          <form action="CV.html">
+             <button id="button-js" href="CV.html" value="submit" >My CV</button>
+          </form>
+       </div>
+       <div class="container-3">
+          <p style="color:#72AB00; margin-bottom: -30px;">Available for:</p>
+          <br>
+          <p>Full Time Work<br>Part Time Work<br>Project Based<br></p>
+          <address>
+             <p style="color:#72AB00; margin-bottom:0;">Website:</p>
+             <a href="www.mysite.com">www.mysite.com</a><br><br>
+			 <p style="color:#72AB00; margin-bottom:0;">E-mail:</p>
+             <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>
+			 <p style="color:#72AB00; margin-bottom:0;">Tel:</p>
+			 <a>+40 722 254 532</a>		
+		  </address>
+          <div class="social-links">
+             <p style="color:#72AB00; margin-bottom:0;">Social links:</p>
+             <br>    
+             <a href="https://www.linkedin.com/in/cristi-oanca/" target="_blank";><img style="height: 40px; width: 40px;" src="images/logo-linkedin.png"></img></a>       
+             <a href="https://www.facebook.com/cristi.oanca.56/" target="_blank"><img style="height: 40px; width: 40px;" src="images/logo-facebook.png"></img></a>   
+          </div>
+       </div>
+    </div>
+    <div class="infos">
+       <div class="column">
+          <h4>TESTIMONIAL</h4>
+          <p>In my spare time, most of the time I like to trade on Forex markets, crypto markets as a hobby and an extra income. I also like to go on hiking and to try new stuffs like local foods, local drinks. </p>
+          <h4>FAVORITE QUOTE</h4>
+          <p>"Good people do not need laws to tell them to act responsibly, while bad people will find a way around the laws." - Plato</p>
+       </div>
+    </div>
+    <div class="footer">
+       <div>© 2021 by Cristi Oanca
+          <a href="mailto:andreioanca02@gmail.com">andreioanca02@gmail.com</a>
+		  <p id="message">Date</p>
+       </div>
+    </div>
+	<script src="./utils.js"></script>
+    <script src="./home.js"> </script>
+ </body>
+ </html>
